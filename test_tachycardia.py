@@ -8,6 +8,13 @@ import pytest
     (' tachycardic', True),
     ('TACHYCARDIC', True),
     ('tachycardic;', True),
+    ('tachyrdic', True),
+    ('tachycard1c', True),
+    ('tachycsrd1c', True),
+    ('tachyrdi', False),
+    ('tachycsmd1c', False),
+    ('tachycd1c', False),
+    ('tachycard1cc', False),
 ])
 def test_is_tachycardic(a, expected):
     from tachycardic import is_tachycardic
