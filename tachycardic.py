@@ -69,5 +69,12 @@ def is_tachycardic(string):
             return False
 
 
+def interface():
+    print("Please input the string you want to check")
+    string = input("Enter your string:")
+    result = is_tachycardic(string)
+    print(result)
+
+
 if __name__ == "__main__":
-    is_tachycardic()
+    interface()
